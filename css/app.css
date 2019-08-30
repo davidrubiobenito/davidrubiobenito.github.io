@@ -1,5 +1,7 @@
 body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
 }
 
 .w3-row-padding img {
@@ -7,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .w3-top, .w3-sidebar{
-    background: #222;
+    background-color: #222 !important;
 }
 
 /* Set the width of the sidebar to 120px */
@@ -23,6 +25,63 @@ body, h1, h2, h3, h4, h5, h6 {
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {
     #main {
-        margin-left: 0;
+        margin-left: 0 !important;
+        margin-top: 38px;
     }
 }
+
+
+/***********************************************************/
+#mySidebar {
+    display: none;
+    right: 0;
+    z-index: 4;
+}
+
+.db-black{
+    color:#ffb400!important;
+}
+.db-hover-black:hover{
+    color:#ffb400!important;
+    background-color:#000!important
+}
+
+.db-grey-04{
+    background: rgba(0,0,0,0.4);
+}
+
+.db-text-yellow, .db-hover-text-yellow:hover {
+    color:#ffb400!important;
+}
+
+.db-border-bottom {
+    border-bottom: 1px solid #343a40!important;
+}
+
+.db-font-weight-200{
+    font-weight: 200;
+}
+
+.db-font-weight-300{
+    font-weight: 300;
+}
+
+.db-title-resumen{
+    color: #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.mySlides {
+    display:none;
+}
+
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0;
+}
+
+
