@@ -1,4 +1,13 @@
-body, h1, h2, h3, h4, h5, h6 {
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
     /*font-family: "Montserrat", sans-serif;*/
     font-family: 'Oswald',sans-serif;
     font-weight: 400;
@@ -30,14 +39,7 @@ body, h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 /***********************************************************/
-#mySidebar {
-    display: none;
-    right: 0;
-    z-index: 4;
-}
-
 .db-black{
     color:#ffb400!important;
 }
@@ -66,6 +68,29 @@ body, h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+#about, #skills, #experience, #education, #photos, #contact {
+    width: 100%;
+    overflow: hidden;
+}
+
+/***********************************************************/
+#mySidebar {
+    display: none;
+    right: 0;
+    z-index: 4;
+}
+
+/***********************************************************/
+.db-message-slider{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 40px 35px;
+    text-shadow: 2px 2px 2px #000;
+}
+
 .db-title-resumen{
     color: #d2d2d2;
     border-top: 1px solid #d2d2d2;
@@ -83,5 +108,68 @@ body, h1, h2, h3, h4, h5, h6 {
     width:13px;
     padding:0;
 }
+
+/***********************************************************/
+@media (min-width: 600px){
+    html{
+        overflow-x: auto;
+    }
+
+    #main{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        width: 4250px;
+        height: 100%;
+    }
+
+    .db-content{
+        max-width: 850px;
+        width: 100%;
+        height: 100%;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+    }
+
+    .mySlides {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    .db-message-slider {
+        bottom: 59px;
+        width: auto;
+        height: auto;
+    }
+
+    #about, #skills, #experience, #education, #photos, #contact {
+        overflow-y: auto;
+    }
+
+}
+
 
 

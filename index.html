@@ -95,9 +95,10 @@
 
         <!-- Page Content -->
         <!--<div class="w3-padding-large" id="main">-->
-        <header id="main">
+        <div id="main">
+
             <!-- Header/Home -->
-            <div class="w3-content w3-display-container" style="max-width:100%">
+            <header class="w3-content w3-display-container db-content" style="max-width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000/?nature" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000?water" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/user/erondu/850x1000" style="width:100%">
@@ -106,40 +107,44 @@
                     <span class="w3-badge demo w3-border w3-transparent" ></span>
                     <span class="w3-badge demo w3-border w3-transparent" ></span>
                 </div>
-                <div class="message-slider"> 
-                    <div class="w3-display-bottomleft w3-text-white db-grey-04" style="padding: 40px 35px;">
+
+                <div class="db-message-slider w3-display-bottomleft w3-text-white db-grey-04"> 
+                    <div class="w3-hide-large w3-hide-medium">
                         <div>
-                            <h2 class="w3-xlarge w3-hide-large w3-hide-medium">
-                                <span class="db-font-weight-300">Hola soy</span>
+                            <h2 class="w3-xlarge">
+                                <span class="db-font-weight-300">Hola, soy</span>
                                 <br>
                                 David Rubio
                             </h2>
-                            <h5 class="w3-hide-large w3-hide-medium db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
-                            <h2 class="w3-xxlarge w3-hide-small">
-                                <span class="db-font-weight-300">Hola soy</span>
-                                <br>
-                                David Rubio
-                            </h2>
-                            <h5 class="w3-xlarge w3-hide-small db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
+                            <h5 class="w3-large db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>                            
                         </div>
-                        <div class="w3-large w3-hide-large w3-hide-medium db-text-yellow ">
+                        <div class="w3-large db-text-yellow ">
                             <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
                             <i class="fab fa-instagram w3-hover-opacity"></i>                
                             <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
                             <a href="https://www.youtube.com/channel/UC84FFyDvy7jvCQPrj-VATWw" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=34660722831"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                         </div> 
-                        <div class="w3-xlarge w3-hide-small db-text-yellow ">
+                    </div>
+                    <div class="w3-hide-small">
+                        <div>
+                            <h2 class="w3-xxlarge">
+                                <span class="db-font-weight-300">Hola, soy</span>
+                                <br>
+                                David Rubio
+                            </h2>
+                            <h5 class="w3-xlarge db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
+                        </div>
+                        <div class="w3-xlarge db-text-yellow ">
                             <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
                             <i class="fab fa-instagram w3-hover-opacity"></i>                
                             <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
                             <a href="https://www.youtube.com/channel/UC84FFyDvy7jvCQPrj-VATWw" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=34660722831"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                         </div>
-                    </div>                     
+                    </div>
                 </div>
-
-            </div>
+            </header>
             <!--
             <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
                 <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
@@ -149,7 +154,8 @@
             -->
 
             <!-- About Section -->
-            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64 db-content" id="about">
+                
                 <h2 class="w3-text-light-grey">My Name</h2>
                 <hr style="width:200px" class="w3-opacity">
                 <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -245,7 +251,7 @@
             </div>
             
             <!-- Portfolio Section -->
-            <div class="w3-padding-64 w3-content" id="photos">
+            <div class="w3-padding-64 w3-content db-content" id="photos">
                 <h2 class="w3-text-light-grey">My Photos</h2>
                 <hr style="width:200px" class="w3-opacity">
 
@@ -269,7 +275,7 @@
             </div>
 
             <!-- Contact Section -->
-            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <div class="w3-padding-64 w3-content w3-text-grey db-content" id="contact">
                 <h2 class="w3-text-light-grey">Contact Me</h2>
                 <hr style="width:200px" class="w3-opacity">
 
@@ -295,7 +301,7 @@
             </div>
             
                 <!-- Footer -->
-            <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge db-content">
                 <i class="fa fa-facebook-official w3-hover-opacity"></i>
                 <i class="fa fa-instagram w3-hover-opacity"></i>
                 <i class="fa fa-snapchat w3-hover-opacity"></i>
