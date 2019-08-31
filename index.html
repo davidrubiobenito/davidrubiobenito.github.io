@@ -14,7 +14,7 @@
     <body class="w3-white">
 
         <!-- Sidebar on medium and large screens (Hidden on small screens) -->
-        <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black">
+        <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black db-zindex-2">
             <!-- Avatar image in top left corner -->
             <img src="./images/logo120.png" style="width:100%; padding:10px;">
 
@@ -76,7 +76,7 @@
         <!-- Overlay on small screens (Hidden on medium and large screens) -->
         <div id="myOverlay" class="w3-overlay w3-hide-large w3-hide-medium" onclick="w3_close()" style="cursor:pointer"></div>
 
-        <nav class="w3-top w3-black w3-hide-large w3-hide-medium">
+        <nav class="w3-top w3-black w3-hide-large w3-hide-medium db-zindex-2">
             <div class="w3-bar w3-opacity-off w3-right-align w3-medium">
                 <span class="w3-bar-item db-black">DAVID RUBIO</span>   
                 <button id="openNav" class="w3-button db-hover-black" onclick="w3_open()">
@@ -98,7 +98,7 @@
         <div id="main">
 
             <!-- Header/Home -->
-            <header class="w3-content w3-display-container db-content" style="max-width:100%">
+            <header class="w3-content w3-display-container db-content">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000/?nature" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000?water" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/user/erondu/850x1000" style="width:100%">
@@ -135,7 +135,7 @@
                             </h2>
                             <h5 class="w3-xlarge db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
                         </div>
-                        <div class="w3-xlarge db-text-yellow ">
+                        <div class="w3-xlarge db-text-yellow">
                             <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
                             <i class="fab fa-instagram w3-hover-opacity"></i>                
                             <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
@@ -145,113 +145,222 @@
                     </div>
                 </div>
             </header>
-            <!--
-            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-                <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
-                <p>Photographer and Web Designer.</p>
-                <img src="https://source.unsplash.com/user/erondu/850x1000" alt="boy" class="w3-image" width="992" height="1108">
-            </header>
-            -->
 
             <!-- About Section -->
-            <div class="w3-content w3-justify w3-text-grey w3-padding-64 db-content" id="about">
-                
-                <h2 class="w3-text-light-grey">My Name</h2>
-                <hr style="width:200px" class="w3-opacity">
-                <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-                <p class="w3-wide">Photography</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-                </div>
-                <p class="w3-wide">Web Design</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-                </div>
-                <p class="w3-wide">Photoshop</p>
-                <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-                </div><br>
-                
-                <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">11+</span><br>
-                    Partners
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">55+</span><br>
-                    Projects Done
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">89+</span><br>
-                    Happy Clients
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">150+</span><br>
-                    Meetings
-                </div>
+            <div class="w3-content w3-justify w3-padding-large w3-padding-48 db-content" id="about">
+
+                <div class="w3-row">
+                    <div class="w3-col s12 m9">
+                        <h2 class="w3-text-dark w3-xxlarge">SOBRE MI</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <h2 class="w3-text-dark w3-medium">PERFIL PROFESIONAL</h2>
+                        <p class="db-text-ordinario w3-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus impedit aliquam, totam quis eius commodi non temporibus nisi! Hic accusantium deserunt maiores omnis facere possimus, nulla nihil quam dolor odio!</p>
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <ul class="w3-ul db-text-ordinario w3-medium">
+                            <li>Nombre: David Rubio Benito</li>
+                            <li>Email: davidrubiobenito@gmail.com</li>
+                            <li>Teléfono: (+34) 636 061 885</li>
+                            <li>Fecha Nacimiento: 24 Diciembre 1977</li>
+                            <li>Dirección: Travesía de la Cañada Nº: 3 - 1ºC, C.P.: 28850, Torrejón de Ardoz - Madrid</li>
+                            <li>Nacionalidad: Española</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <a href="" class="w3-btn w3-text-black w3-padding-large w3-section w3-medium db-border-yellow">
+                            <i class="fa fa-download"></i> 
+                            DESCARGAR CV FORMATO PDF
+                        </a>
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <!--<img src="https://demo.nrgthemes.com/projects/mee/wp-content/uploads/2014/11/signature.jpg">-->
+                        <img src="./images/signaturedavid.png">
+                    </div>
                 </div>
 
-                <button class="w3-button w3-light-grey w3-padding-large w3-section">
-                <i class="fa fa-download"></i> Download Resume
-                </button>
-                
-                <!-- Grid for pricing tables -->
-                <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                    <li class="w3-padding-16">Web Design</li>
-                    <li class="w3-padding-16">Photography</li>
-                    <li class="w3-padding-16">5GB Storage</li>
-                    <li class="w3-padding-16">Mail Support</li>
-                    <li class="w3-padding-16">
-                        <h2>$ 10</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                    </li>
-                    </ul>
-                </div>
-
-                <div class="w3-half">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                    <li class="w3-padding-16">Web Design</li>
-                    <li class="w3-padding-16">Photography</li>
-                    <li class="w3-padding-16">50GB Storage</li>
-                    <li class="w3-padding-16">Endless Support</li>
-                    <li class="w3-padding-16">
-                        <h2>$ 25</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                    </li>
-                    </ul>
-                </div>
-                <!-- End Grid/Pricing tables -->
-                </div>
-                
-                <!-- Testimonials -->
-                <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-                <img src="https://source.unsplash.com/user/erondu/" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-                <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-                <p>Jane Doe saved us from a web disaster.</p><br>
-                
-                <img src="https://source.unsplash.com/user/erondu/" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-                <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-                <p>No one is better than Jane Doe.</p>
             <!-- End About Section -->
             </div>
+
+            <!-- Skills Section -->
+            <div class="w3-content w3-padding w3-padding-48 db-content w3-light-grey" id="skills">
+
+                    <div class="w3-row db-row">
+                        <div class="w3-col s12">
+                            <h2 class="w3-text-dark w3-xxlarge">MIS HABILIDADES</h2>
+                            <hr class="db-hr-title">
+                        </div>
+                        <div class="w3-col s12">
+                            <h2 class="w3-text-dark w3-medium">RESULMEN HABILIDADES</h2>
+                            <p class="db-text-ordinario w3-medium w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-margin-top db-row">
+                        <div class="w3-col m3">
+                            <div class="progress avanzado avanzado-80">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">80%</div>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="skills-principal">
+                            <h4>HTML/CSS3</h4>
+                            <p>Avanzado</p>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="progress avanzado avanzado-80">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">80%</div>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="skills-principal">
+                            <h4>Javascript/</h4>
+                            <h4>AngularJS</h4>
+                            <p>Avanzado</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="w3-row db-row">
+                        <div class="w3-col m3">
+                            <div class="progress avanzado avanzado-60">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">60%</div>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="skills-principal">
+                            <h4>Angular</h4>
+                            <p>Medio</p>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="progress avanzado avanzado-60">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">60%</div>
+                            </div>
+                        </div>
+                    
+                        <div class="w3-col m3">
+                            <div class="skills-principal">
+                            <h4>PhotoShop/</h4>
+                            <h4>Ilustrator</h4>
+                            <p>Medio</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="w3-row db-row">
+                        <div class="w3-col s12">
+                            <div class="full-divider"></div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row db-row">
+                        <div class="w3-col s12">
+                            <h3 class="w3-text-dark w3-medium">CONOCIMIENTOS</h3>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-margin-top db-row">
+                        <div class="w3-col s12 m4">
+                            <ul class="w3-ul lista-skills">
+                                <li class="w3-border-0"><i class="fas fa-check"></i> jQuery</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> KendoUI</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> TypeScript</li>  
+                                <li class="w3-border-0"><i class="fas fa-check"></i> Git / GitHub / SVN / CVS</li>      
+                            </ul>
+                        </div>
+                        <div class="w3-col s12 m3">
+                            <ul class="w3-ul lista-skills">        
+                                <li class="w3-border-0"><i class="fas fa-check"></i> Java</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> SpringBoot</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> PHP</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> MySql / Oracle</li>
+                            </ul>
+                        </div>
+                        <div class="w3-col s12 m5">
+                            <ul class="w3-ul lista-skills">        
+                                <li class="w3-border-0"><i class="fas fa-check"></i> Eclipse / IntelliJIDEA / PhpStorm</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> Microsoft Office 2016</li>        
+                                <li class="w3-border-0"><i class="fas fa-check"></i> AutoCad 2014</li>
+                                <li class="w3-border-0"><i class="fas fa-check"></i> Presto 8.8</li>        
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="w3-row db-row">
+                        <div class="w3-col">
+                            <div class="full-divider"></div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row db-row">
+                        <div class="w3-col s12">
+                            <h3 class="w3-text-dark w3-medium">Lenguajes</h3>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-margin-top db-row">
+                        <div class="w3-col s4 m2">
+                            <div class="progress-value-lenguaje">99</div>
+                        </div>
+                        <div class="w3-col s8 m10">
+                            <div class="idioma">
+                            <h4>Español Nativo</h4>
+                            <div class="process-value-100">
+                                <div class="progress-value-barra" style="width:99%"></div>
+                            </div>       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-row w3-margin-top db-row">
+                        <div class="w3-col s4 m2">
+                            <div class="progress-value-lenguaje">33</div>
+                        </div>
+                        <div class="w3-col s8 m10">
+                            <div class="idioma">
+                            <h4>Inglés A2</h4>
+                            <div class="process-value-100">
+                                <div class="progress-value-barra" style="width:33%"></div>
+                            </div>       
+                            </div>
+                        </div>
+                    </div>
+
+    
+                <!-- End About Section -->
+                </div>
             
             <!-- Portfolio Section -->
-            <div class="w3-padding-64 w3-content db-content" id="photos">
+            <div class="w3-content w3-padding-48 db-content" id="photos">
                 <h2 class="w3-text-light-grey">My Photos</h2>
                 <hr style="width:200px" class="w3-opacity">
 

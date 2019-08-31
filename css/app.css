@@ -73,6 +73,18 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+.db-zindex-2{
+    z-index:2;
+}
+
+.db-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 /***********************************************************/
 #mySidebar {
     display: none;
@@ -110,6 +122,276 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /***********************************************************/
+.db-hr-title{
+    width: 70px;
+    height: 5px;
+    background-color: #ffb400;
+    margin: 25px 0 50px;
+}
+
+.db-text-ordinario{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.db-border-yellow{
+    border: 2px solid #ffb400;
+}
+
+/***********************************************************/
+
+
+.skills-principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    height: 100%;  
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+  
+  .skills-principal h4{
+      font-weight: 300;
+      font-style: normal;
+      font-size: 25px;
+      text-transform: uppercase;
+      line-height: 0.9;
+  }
+  
+  .full-divider{
+      width: 100%;
+      height: 1px;
+      background-color: #dfdfdf;
+      margin: 50px 0;
+      clear: both;
+  }
+  
+  .lista-skills{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  .progress-value-lenguaje{
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 42px;
+  }
+  .progress-value-lenguaje::after{
+    content: '%';
+    font-weight: 300;
+  }
+  
+  .idioma h4{
+    font-size: 16px;
+  }
+  .process-value-100{
+      background: #d4d4d4;
+      width: 100%;
+      position: relative;
+      top: 10px;
+  }
+  .progress-value-barra{
+    height: 6px;
+    background-color: #8f8f8f;
+  }
+  
+  
+  /* ------------------ */
+  
+.progress {
+    width: 150px;
+    height: 150px !important;
+    line-height: 150px;
+    background: none !important;
+    margin: 20px auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #d2d2d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left {
+    left: 0;
+}
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right {
+    right: 0;
+}
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ffb400;
+    line-height: 144px;
+    text-align: center;
+    position: absolute;
+    top: 2%; 
+    left: 2%; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+
+}
+.progress.avanzado .progress-bar {
+    border-color: #8f8f8f; //#049dff
+}
+.progress.avanzado-80 .progress-left .progress-bar {
+    animation: loading-3 1.5s linear forwards 1.8s;
+}
+
+.progress.avanzado-60 .progress-left .progress-bar {
+    animation: loading-6 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+    border-color: #fdba04;
+}
+
+.progress.yellow .progress-right .progress-bar {
+    animation: loading-3 1.8s linear forwards;
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: none;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+
+    
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(108deg);
+        transform: rotate(108deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(72deg);
+        transform: rotate(72deg);
+    }
+}
+
+
+@keyframes loading-6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes loading-7 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes loading-8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+}
+  
+
+/***********************************************************/
 @media (min-width: 600px){
     html{
         overflow-x: auto;
@@ -134,13 +416,12 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
-        width: 4250px;
+        width: 5100px;
         height: 100%;
     }
 
     .db-content{
         max-width: 850px;
-        width: 100%;
         height: 100%;
         -webkit-order: 0;
         -ms-flex-order: 0;
@@ -166,6 +447,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #about, #skills, #experience, #education, #photos, #contact {
+        padding: 70px !important;
         overflow-y: auto;
     }
 
