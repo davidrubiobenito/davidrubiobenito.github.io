@@ -52,7 +52,8 @@ function db_scrollLeft(identified){
     var scrollTo = $(identified)  
         // retrieve its position relative to its parent
         .position().left;                   
-    console.log(scrollTo);
+    //console.log(scrollTo);
+    
     // simply update the scroll of the scroller
     // $('.scroller').scrollLeft(scrollTo); 
     // use an animation to scroll to the destination
@@ -60,7 +61,6 @@ function db_scrollLeft(identified){
         .animate({'scrollLeft': scrollTo}, 500);
 
 }
-
 
 function db_map(){
     var contentPopup = '<div><div class="w3-center"><img src="../images/logo72.jpg" alt="David Rubio"></img></div><div><p class="db-text-ordinario db-font-weight-600">David Rubio Benito</p><p class="db-text-ordinario">28850, Torrejón de Ardoz</p></div></div>'

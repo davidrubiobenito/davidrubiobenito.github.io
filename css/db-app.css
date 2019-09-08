@@ -513,43 +513,6 @@ h1, h2, h3, h4, h5, h6 {
         overflow-x: auto;
     }
 
-    #main{
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-align-content: stretch;
-        -ms-flex-line-pack: stretch;
-        align-content: stretch;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        width: 5100px; /*numero de secciones x 850px*/
-        height: 100%;
-    }
-
-    .db-content{
-        max-width: 850px;
-        height: 100%;
-        -webkit-order: 0;
-        -ms-flex-order: 0;
-        order: 0;
-        -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        -webkit-align-self: auto;
-        -ms-flex-item-align: auto;
-        align-self: auto;
-    }
-
     .mySlides {
         width: 100%;
         display: block;
@@ -578,6 +541,44 @@ h1, h2, h3, h4, h5, h6 {
     
     .periodo .experience-principal h5{
         margin-top: 0px;  
+    }
+
+
+    #main{
+        overflow: hidden;
+        position: absolute;
+        left:0;
+        right: 0;
+        height: 100%;
+    }
+
+    .main-wrapper{
+        position: absolute;
+        width: 6950px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .db-content{
+        position: relative;
+        max-width: 850px;
+        width: 850px;
+        height: 100%;
+        float: left;
+    }
+
+    .db-img{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    .db-footer{
+        position: relative;
+        max-width: 1200px;
+        width: 1200px;
+        height: 100%;
+        float: left;
     }
 
 }
