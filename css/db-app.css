@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
     .mySlides {
         width: 100%;
         display: block;
-        height: 100%;
+        height: auto;
     }
 
     .db-message-slider {
@@ -554,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .main-wrapper{
         position: absolute;
-        width: 6950px;
+        width: 6800px;
         height: 100%;
         overflow: hidden;
     }
@@ -575,8 +575,8 @@ h1, h2, h3, h4, h5, h6 {
 
     .db-footer{
         position: relative;
-        max-width: 1200px;
-        width: 1200px;
+        max-width: 1700px;
+        width: 1700px;
         height: 100%;
         float: left;
     }

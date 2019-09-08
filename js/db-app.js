@@ -100,7 +100,10 @@ var isMobile = {
 $(window).on('load', function() {
     // executes when complete page is fully loaded, including all frames, objects and images
     if($(window).width() > 600 && $(window).width() < 971 && isMobile.any()) {
-        $("#popupCook").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+        $("#main").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+    }
+    else{
+        $("#main").css({"overflow":"hidden"});
     }
     
     this.db_map();
@@ -118,6 +121,9 @@ $(window).on('load', function() {
 $(window).resize(function() {
     // execute when resize window
     if($(window).width() > 600 && $(window).width() < 971 && isMobile.any()) {
-        $("#popupCook").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+        $("#main").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+    }
+    else{
+        $("#main").css({"overflow":"hidden"});
     }
 });
