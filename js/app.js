@@ -41,3 +41,28 @@ function showDivs() {
     
     setTimeout(showDivs, 4000);  // Change image every 4 seconds
 }
+
+function db_map(){
+    var contentPopup = '<div><div class="w3-center"><img src="../images/logo72.jpg" alt="David Rubio"></img></div><div><p class="db-text-ordinario db-font-weight-600">David Rubio Benito</p><p class="db-text-ordinario">28850, Torrejón de Ardoz</p></div></div>'
+		
+    var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
+    var map = L.map('mapid').setView([40.4585896, -3.4793465], 17).addLayer(osm);
+    L.marker([40.4585896, -3.4793465])
+        .addTo(map)
+        .bindPopup(contentPopup)
+        .openPopup();
+}
+
+$(window).on('load', function() {
+    // executes when complete page is fully loaded, including all frames, objects and images
+    this.db_map();
+
+    setTimeout(function () {
+        $("#popupCook").fadeIn(200);
+     }, 4000);
+    $("#closePopupCook, .popupCookOK").click(function() {
+        $("#popupCook").fadeOut(200);
+    }); 
+});

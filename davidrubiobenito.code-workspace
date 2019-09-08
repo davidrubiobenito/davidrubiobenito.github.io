@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "\\\\192.168.1.35\\OracionLocal\\GITwebs\\perlamayorgaboxingclub.github.io"
 		}
 	],
 	"settings": {}

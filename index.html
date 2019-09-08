@@ -8,44 +8,51 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+            crossorigin=""/>    
     <link rel="stylesheet" type="text/css" href="./css/app.css">
 
     <body class="w3-white">
 
         <!-- Sidebar on medium and large screens (Hidden on small screens) -->
-        <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black db-zindex-2">
-            <!-- Avatar image in top left corner -->
-            <img src="./images/logo120.png" style="width:100%; padding:10px;">
+        <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black db-zindex-2 db-flex-column">
+            <div>
+                <!-- Avatar image in top left corner -->
+                <img src="./images/logo120.png" style="width:100%; padding:10px;">
 
-            <a href="#" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-home w3-xxlarge"></i> -->
-                <p>INICIO</p>
-            </a>
-            <a href="#about" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-user w3-xxlarge"></i> -->
-                <p>SOBRE MI</p>
-            </a>
-            <a href="#skills" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>HABILIDADES</p>
-            </a>
-            <a href="#experience" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>EXPERIENCIA</p>
-            </a>
-            <a href="#education" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>EDUCACION</p>
-            </a>
-            <a href="#photos" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-                <p>BLOG</p>
-            </a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding db-hover-black">
-                <!-- <i class="fa fa-envelope w3-xxlarge"></i> -->
-                <p>CONTACTO</p>
-            </a>
+                <a href="#" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>INICIO</p>
+                </a>
+                <a href="#about" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>SOBRE MI</p>
+                </a>
+                <a href="#skills" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>HABILIDADES</p>
+                </a>
+                <a href="#experience" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>EXPERIENCIA</p>
+                </a>
+                <a href="#education" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>FORMACION</p>
+                </a>
+                <!--
+                <a href="#blog" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+                    <p>BLOG</p>
+                </a>
+                -->
+                <a href="#contact" class="w3-bar-item w3-button w3-padding db-hover-black">
+                    <p>CONTACTO</p>
+                </a>
+            </div>
+            <div class="w3-large db-text-yellow">
+                <div class="w3-bar w3-center">
+                    <a href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
+                    <a href="https://api.whatsapp.com/send?phone=636061885"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+                </div>              
+            </div>
         </nav>
 
         <!-- Sidebar on small screens (Hidden on medium and large screens) -->
@@ -63,25 +70,41 @@
                 <p>EXPERIENCIA</p>
             </a>
             <a href="#education" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <p>EDUCACION</p>
+                <p>FORMACION</p>
             </a>
-            <a href="#photos" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+            <!--
+            <a href="#blog" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
                 <p>BLOG</p>
             </a>
+            -->
             <a href="#contact" class="w3-bar-item w3-button w3-padding db-hover-black">
                 <p>CONTACTO</p>
-            </a>
+            </a>         
         </nav>
 
         <!-- Overlay on small screens (Hidden on medium and large screens) -->
         <div id="myOverlay" class="w3-overlay w3-hide-large w3-hide-medium" onclick="w3_close()" style="cursor:pointer"></div>
 
         <nav class="w3-top w3-black w3-hide-large w3-hide-medium db-zindex-2">
-            <div class="w3-bar w3-opacity-off w3-right-align w3-medium">
-                <span class="w3-bar-item db-black">DAVID RUBIO</span>   
-                <button id="openNav" class="w3-button db-hover-black" onclick="w3_open()">
-                    <i class="fas fa-align-justify"></i>
-                </button>
+            <div class="w3-bar w3-opacity-off w3-medium">
+                <div class="w3-row">
+                    <div class="w3-col s5">
+                        <span class="w3-bar-item db-black">DAVID RUBIO</span> 
+                    </div>
+                    <div class="w3-col s5 w3-center w3-large db-text-yellow">
+                        <button class="w3-button db-hover-black">
+                            <a href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
+                        </button>
+                        <button class="w3-button db-hover-black">
+                            <a href="https://api.whatsapp.com/send?phone=636061885"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+                        </button>
+                    </div>
+                    <div class="w3-col s2 w3-right-align">
+                        <button id="openNav" class="w3-button db-hover-black" onclick="w3_open()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -89,7 +112,7 @@
         <div id="main">
 
             <!-- Header/Home -->
-            <header class="w3-content w3-display-container db-content">
+            <header class="w3-content w3-display-container db-content" id="home">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000/?nature" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/850x1000?water" style="width:100%">
                 <img class="mySlides" src="https://source.unsplash.com/user/erondu/850x1000" style="width:100%">
@@ -110,11 +133,8 @@
                             <h5 class="w3-large db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>                            
                         </div>
                         <div class="w3-large db-text-yellow ">
-                            <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
-                            <i class="fab fa-instagram w3-hover-opacity"></i>                
-                            <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
-                            <a href="https://www.youtube.com/channel/UC84FFyDvy7jvCQPrj-VATWw" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=34660722831"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+                            <a href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
+                            <a href="https://api.whatsapp.com/send?phone=636061885"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                         </div> 
                     </div>
                     <div class="w3-hide-small">
@@ -127,11 +147,8 @@
                             <h5 class="w3-xlarge db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
                         </div>
                         <div class="w3-xlarge db-text-yellow">
-                            <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
-                            <i class="fab fa-instagram w3-hover-opacity"></i>                
-                            <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
-                            <a href="https://www.youtube.com/channel/UC84FFyDvy7jvCQPrj-VATWw" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=34660722831"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+                                <a href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
+                                <a href="https://api.whatsapp.com/send?phone=636061885"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                         </div>
                     </div>
                 </div>
@@ -147,26 +164,27 @@
                     </div>
                     <div class="w3-col s12 m9">
                         <h2 class="w3-text-dark w3-medium">PERFIL PROFESIONAL</h2>
-                        <p class="db-text-ordinario w3-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus impedit aliquam, totam quis eius commodi non temporibus nisi! Hic accusantium deserunt maiores omnis facere possimus, nulla nihil quam dolor odio!</p>
+                        <p class="db-text-ordinario w3-medium">Full Stack Developer con varios años de experiencia en el desarrollo de software.</p>
+                        <p class="db-text-ordinario w3-medium">Apasionado de la tecnología y arquitectura. Me gusta trabajar en equipo, aportar ideas, 
+                            realizar el trabajo profesionalmente con persistencia y constancia. En constante aprendizaje de nuevas tecnologías.</p>
                     </div>
                     <div class="w3-col s12 m9">
                         <ul class="w3-ul db-text-ordinario w3-medium">
                             <li>Nombre: David Rubio Benito</li>
-                            <li>Email: davidrubiobenito@gmail.com</li>
+                            <li>Email: <a href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a></li>
                             <li>Teléfono: (+34) 636 061 885</li>
                             <li>Fecha Nacimiento: 24 Diciembre 1977</li>
-                            <li>Dirección: Travesía de la Cañada Nº: 3 - 1ºC, C.P.: 28850, Torrejón de Ardoz - Madrid</li>
+                            <li>Localidad: Torrejón de Ardoz - Madrid</li>
                             <li>Nacionalidad: Española</li>
                         </ul>
                     </div>
                     <div class="w3-col s12 m9">
-                        <a href="" class="w3-btn w3-text-black w3-padding-large w3-section w3-medium db-border-yellow">
+                        <a href="./images/cvmee.pdf" class="w3-btn w3-text-black w3-padding-large w3-section w3-medium db-border-yellow">
                             <i class="fa fa-download"></i> 
                             DESCARGAR CV FORMATO PDF
                         </a>
                     </div>
                     <div class="w3-col s12 m9">
-                        <!--<img src="https://demo.nrgthemes.com/projects/mee/wp-content/uploads/2014/11/signature.jpg">-->
                         <img src="./images/signaturedavid.png">
                     </div>
                 </div>
@@ -183,8 +201,9 @@
                         <hr class="db-hr-title">
                     </div>
                     <div class="w3-col s12">
-                        <h2 class="w3-text-dark w3-medium">RESULMEN HABILIDADES</h2>
-                        <p class="db-text-ordinario w3-medium w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</p>
+                        <h2 class="w3-text-dark w3-medium">RESUMEN HABILIDADES</h2>
+                        <p class="db-text-ordinario w3-medium w3-justify">Tras finalizar estudios he potenciado conocimientos técnicos y habilidades prácticas en Front-End y Back-End.</p>
+                        <p class="db-text-ordinario w3-medium w3-justify">He tenido la oportunidad de usar una gran variedad de lenguajes de programación, sistemas operativos y herramientas de desarrollo.</p>
                     </div>
                 </div>
 
@@ -263,8 +282,8 @@
                 
                     <div class="w3-col m3">
                         <div class="skills-principal">
-                        <h4>PhotoShop/</h4>
-                        <h4>Ilustrator</h4>
+                        <h4>Java/</h4>
+                        <h4>Spring MVC</h4>
                         <p>Medio</p>
                         </div>
                     </div>
@@ -290,18 +309,18 @@
                             <li class="w3-border-0"><i class="fas fa-check"></i> Git / GitHub / SVN / CVS</li>      
                         </ul>
                     </div>
-                    <div class="w3-col s12 m3">
+                    <div class="w3-col s12 m4">
                         <ul class="w3-ul lista-skills">        
-                            <li class="w3-border-0"><i class="fas fa-check"></i> Java</li>
-                            <li class="w3-border-0"><i class="fas fa-check"></i> SpringBoot</li>
                             <li class="w3-border-0"><i class="fas fa-check"></i> PHP</li>
                             <li class="w3-border-0"><i class="fas fa-check"></i> MySql / Oracle</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Eclipse / IntelliJIDEA</li>                                                      
                         </ul>
                     </div>
-                    <div class="w3-col s12 m5">
-                        <ul class="w3-ul lista-skills">        
-                            <li class="w3-border-0"><i class="fas fa-check"></i> Eclipse / IntelliJIDEA / PhpStorm</li>
-                            <li class="w3-border-0"><i class="fas fa-check"></i> Microsoft Office 2016</li>        
+                    <div class="w3-col s12 m4">
+                        <ul class="w3-ul lista-skills">                                   
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Microsoft Office 2016</li>  
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Photoshop</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Illustrator</li>      
                             <li class="w3-border-0"><i class="fas fa-check"></i> AutoCad 2014</li>
                             <li class="w3-border-0"><i class="fas fa-check"></i> Presto 8.8</li>        
                         </ul>
@@ -358,8 +377,9 @@
                         <hr class="db-hr-title">
                     </div>
                     <div class="w3-col s12">
-                        <h2 class="w3-text-dark w3-medium">2.5 AÑOS EXPERIENCIA</h2>
-                        <p class="db-text-ordinario w3-medium w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</p>
+                        <h2 class="w3-text-dark w3-medium">RESUMEN EXPERIENCIA</h2>
+                        <p class="db-text-ordinario w3-medium w3-justify">Profesional con varios años de experiencia en el desarrollo de software 
+                            con conocimientos técnicos Frond-End y Back-End.</p>
                     </div>
                 </div>
 
@@ -371,7 +391,7 @@
 
                 <div class="w3-row w3-margin-top experience-details db-row">
                     <div class="w3-container w3-col s12 m2 icon-block">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="w3-container w3-col s12 m4 periodo">
                         <div class="experience-principal">
@@ -381,7 +401,7 @@
                         </div>
                     </div>
                     <div class=" w3-container w3-col s12 m6 funciones w3-justify">
-                        <p class="db-text-ordinario"><dfn>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</dfn></p>
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Iberia S.A.</span><br><dfn>Desarrollando microservicios página web iberia.com</dfn><br><dfn>Java, Spring MVC, JUnit, Mockito, Docker, Maven, Git, Eclipse, TomCat, Oracle.</dfn></p>
                     </div>
                 </div>
 
@@ -393,7 +413,7 @@
 
                 <div class="w3-row w3-margin-top experience-details db-row">
                     <div class="w3-container w3-col s12 m2 icon-block">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="w3-container w3-col s12 m4 periodo">
                         <div class="experience-principal">
@@ -403,7 +423,9 @@
                         </div>
                     </div>
                     <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                        <p class="db-text-ordinario"><dfn>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</dfn></p>
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Banco Inversis S.A.</span><br>
+                            <dfn>Desarrollador aplicación web interna</dfn><br><dfn>HTML, CSS3, Bootstrap, Javascript, AngularJS, jQuery, Kendo UI, Adobe Flex, 
+                                Java, Spring MVC, SpringBoot, CVS, SVN, Eclipse, TomCat, Oracle, OSB, TIBCO, Ibulder.</dfn></p>
                     </div>
                 </div>
 
@@ -415,7 +437,7 @@
 
                 <div class="w3-row w3-margin-top experience-details db-row">
                     <div class="w3-container w3-col s12 m2 icon-block">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="w3-container w3-col s12 m4 periodo">
                         <div class="experience-principal">
@@ -425,7 +447,8 @@
                         </div>
                     </div>
                     <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                        <p class="db-text-ordinario"><dfn>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</dfn></p>
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desallorrador software</span><br><dfn>Páginas web con CMS Joomla, HTML, CSS, 
+                            Javascript, jQuery, PHP.</dfn><br><dfn>Aplicación gestioón bares y restaurantes (TPV, comandero) con framework AngularJS.</dfn></p>
                     </div>
                 </div>
 
@@ -437,17 +460,64 @@
 
                 <div class="w3-row w3-margin-top experience-details db-row">
                     <div class="w3-container w3-col s12 m2 icon-block">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fas fa-ruler-combined"></i>
                     </div>
                     <div class="w3-container w3-col s12 m4 periodo">
                         <div class="experience-principal">
-                            <h5 class="w3-large">Jazztel S.A.</h5>
-                            <h4 class="w3-xlarge">Técnico Soporte</h4>
-                            <span class="w3-medium">Jul. 2014 - Sep. 2014</span>       
+                            <h5 class="w3-large">Caytco Import S.L.</h5>
+                            <h4 class="w3-xlarge">Responsable producto</h4>
+                            <span class="w3-medium">Jul. 2010 - Jul. 2011</span>       
                         </div>
                     </div>
                     <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                        <p class="db-text-ordinario"><dfn>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</dfn></p>
+                        <p class="db-text-ordinario"><dfn>Instrucciones para la fabricación del producto, control de calidad del producto, acciones correctoras, 
+                            diseño gráﬁco y retoque fotográﬁco.</dfn></p>
+                    </div>
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Contratas y Obras Empresa Constructora S.A.</h5>
+                            <h4 class="w3-xlarge">Jefe de obra</h4>
+                            <span class="w3-medium">Feb. 2008 - Dic. 2009</span>       
+                        </div>
+                    </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><dfn>Programación de la obra, mediciones valoradas, certiﬁcaciones, solicitud de ofertas, estudios comparativos, 
+                            propuestas de compras y subcontratos, seguimiento, control y evaluación de especiﬁcaciones, plazos de entrega, 
+                            control de documentación de calidad y seguridad.</dfn></p>
+                    </div>
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Ortiz Construcciones y Proyectos S.A.</h5>
+                            <h4 class="w3-xlarge">Jefe de producción</h4>
+                            <span class="w3-medium">Nov. 2005 - Feb. 2008</span>       
+                        </div>
+                    </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><dfn>Dar apoyo al Jefe de Obra en todo lo relativo a la correcta realización de la obra.</dfn></p>
                     </div>
                 </div>
 
@@ -464,7 +534,8 @@
                     </div>
                     <div class="w3-col s12">
                         <h2 class="w3-text-dark w3-medium">RESUMEN FORMACIÓN</h2>
-                        <p class="db-text-ordinario w3-medium w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sem sed quam tempus aliquet vitae eget dolor. Proin eu ultrices libero. Curabitur vulputate vestibulum elementum. Suspendisse id neque a nibh mollis blandit.</p>
+                        <p class="db-text-ordinario w3-medium w3-justify">Mi pasión por las nuevas tecnologías y arquitectura 
+                            hizo impulsar mi formación como Técnico Desarrollo de Software y Diplomado en Arquitectura Técnica.</p>
                     </div>
                 </div>
 
@@ -527,70 +598,87 @@
             <!-- End Education Section -->
             </div>
 
-            <!-- Portfolio Section -->
-            <div class="w3-content w3-padding-48 db-content " id="photos">
+            <!-- Contact Section -->
+            <div class="w3-content w3-padding w3-padding-48 db-content" id="contact">
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">CONTACTO</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12">
+                        <p class="db-text-ordinario"><i class="fa fa-map-marker fa-fw db-text-yellow w3-xlarge w3-margin-right"></i> Torrejón de Ardoz - Madrid, España</p>
+                        <p class="db-text-ordinario"><i class="fa fa-phone fa-fw db-text-yellow w3-xlarge w3-margin-right"></i> Teléfono: (+34) 636 061 885</p>
+                        <p class="db-text-ordinario"><i class="fa fa-envelope fa-fw db-text-yellow w3-xlarge w3-margin-right"> </i> Email: <a href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a></p>
+                    </div>
+                    <div class="w3-col s12">
+                        <div id="mapid" class="w3-image" style="width:100%;margin-top:48px;height: 80vh;"></div>
+                    </div>
+                </div>
+                    
+            <!-- End Contact Section -->
+            </div>
+
+            <!-- Blog Section -->
+            <!--
+            <div class="w3-content w3-padding w3-padding-48 w3-light-grey db-content" id="blog">
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">BLOG</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!--
+            <div class="w3-content w3-padding-48 db-content " id="blog">
                 <h2 class="w3-text-light-grey">My Photos</h2>
                 <hr style="width:200px" class="w3-opacity">
 
-                <!-- Grid for photos -->
                 <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                </div>
+                    <div class="w3-half">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                    </div>
 
-                <div class="w3-half">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                    <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
-                </div>
-                <!-- End photo grid -->
-                </div>
-            <!-- End Portfolio Section -->
+                    <div class="w3-half">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                        <img src="https://source.unsplash.com/user/erondu/" style="width:100%">
+                    </div>
+                </div>            
             </div>
-
-            <!-- Contact Section -->
-            <div class="w3-padding-64 w3-content w3-text-grey w3-light-grey db-content" id="contact">
-                <h2 class="w3-text-light-grey">Contact Me</h2>
-                <hr style="width:200px" class="w3-opacity">
-
-                <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-                </div><br>
-                <p>Lets get in touch. Send me a message:</p>
-
-                <form action="/action_page.php" target="_blank">
-                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-                <p>
-                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                </p>
-                </form>
-            <!-- End Contact Section -->
-            </div>
+            -->
             
             <!-- Footer -->
-            <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge db-content">
-                <div class="w3-large db-text-yellow ">
-                    <a href="https://www.facebook.com/perla.mayorga.9484" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a> 
-                    <i class="fab fa-instagram w3-hover-opacity"></i>                
-                    <a href="https://twitter.com/PerlaBoxingClub" target="_blank"><i class="fab fa-twitter w3-hover-opacity"></i></a>
-                    <a href="https://www.youtube.com/channel/UC84FFyDvy7jvCQPrj-VATWw" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=34660722831"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
+            <footer class="w3-content db-black w3-padding-64 w3-text-grey w3-large w3-center w3-hide-large w3-hide-medium db-content">
+                <a href="#home" class="w3-btn db-hover-black db-text-yellow db-border-yellow"><i class="fa fa-arrow-up w3-margin-right"></i>Arriba</a>
+                <div class="w3-section w3-xlarge">
+                    <a href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
+                    <a href="https://api.whatsapp.com/send?phone=636061885"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>
                 </div>
+                <p class="db-text-ordinario">www.davidrubiobenito.github.io</p>
             <!-- End footer -->
             </footer>
 
         <!-- END PAGE CONTENT -->
         </div>
+
+        <div id="popupCook">
+            <div id="closePopupCook" class="w3-right"><i class="far fa-window-close"></i></div>
+            <div class="w3-col s12 w3-center">
+                Este sitio web utliza cookies.<a href="./privacy-terms-and-conditions.html" target="_blank"> Más información.</a>
+            </div>
+            <div class="w3-col s12 w3-center"><a class="popupCookOK">Aceptar</a></div>           
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" 
+                integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 
         <script src="./js/app.js"></script> 
     </body>
