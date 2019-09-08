@@ -75,8 +75,34 @@ function db_map(){
         .openPopup();
 }
 
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+
 $(window).on('load', function() {
     // executes when complete page is fully loaded, including all frames, objects and images
+    if($(window).width() > 600 && $(window).width() < 971 && isMobile.any()) {
+        $("#popupCook").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+    }
+    
     this.db_map();
     
     setTimeout(function () {
@@ -86,4 +112,12 @@ $(window).on('load', function() {
         $("#popupCook").fadeOut(200);
     });    
     
+});
+
+
+$(window).resize(function() {
+    // execute when resize window
+    if($(window).width() > 600 && $(window).width() < 971 && isMobile.any()) {
+        $("#popupCook").css({"overflow":"scroll"}, {"overflow-x":"auto"},  {"overflow-y":"hidden"})
+    }
 });
