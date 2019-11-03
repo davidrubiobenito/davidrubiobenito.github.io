@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0 !important;
-        margin-top: 43px;
+        margin-top: 42px;
     }
 }
 
@@ -98,6 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .db-black{
     background-color: #222 !important;
+}
+
+.db-margin-lr-5{
+    margin-right: 5px !important;
+    margin-left: 5px !important;   
 }
 
 /***********************************************************/
@@ -516,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
     .mySlides {
         width: 100%;
         display: block;
-        height: auto;
+        height: 100%;
     }
 
     .db-message-slider {
@@ -577,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         max-width: 1700px;
         width: 1700px;
-        height: auto;
+        height: 100%;
         float: left;
     }
 
