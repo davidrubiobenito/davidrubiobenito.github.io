@@ -1,259 +1,295 @@
 <!DOCTYPE html>
 <html>
-    <title>David Rubio Benito CV</title>
 
+<head>
+    <title>David Rubio Benito CV</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Currículum de David Rubio Benito, desarrollador de software y arquitecto técnico en Madrid. Experiencia en Java, Spring Boot, Angular, y más.">
+    <meta name="keywords" content="David Rubio Benito, desarrollador software, backend, Java, Spring Boot, Madrid, arquitecto técnico, Angular, CV, curriculum">
+    <meta name="author" content="David Rubio Benito">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="David Rubio Benito - Desarrollador de Software y Arquitecto Técnico">
+    <meta property="og:description" content="Currículum profesional de David Rubio Benito, especializado en Java, Spring Boot y tecnologías web.">
+    <meta property="og:image" content="https://www.davidrubiobenito.github.io/images/logo120.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.davidrubiobenito.github.io/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="David Rubio Benito - Desarrollador de Software y Arquitecto Técnico">
+    <meta name="twitter:description" content="Currículum profesional de David Rubio Benito, especializado en Java, Spring Boot y tecnologías web.">
+    <meta name="twitter:image" content="https://www.davidrubiobenito.github.io/images/logo120.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+
+    <!-- CSS and Fonts -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-            crossorigin=""/>    
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
     <link rel="stylesheet" type="text/css" href="./css/db-app.css">
+</head>
 
-    <body class="w3-white">
+<body class="w3-white">
 
-        <!-- Sidebar on medium and large screens (Hidden on small screens) -->
-        <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black db-zindex-2 db-flex-column">
-            <div>
-                <!-- Avatar image in top left corner -->
-                <img class="w3-bar-item w3-button db-hover-black" src="./images/logo120.png" style="width:100%; padding:10px;" onclick="db_scrollLeft('#home')">
-                <!--
+    <!-- Sidebar on medium and large screens (Hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-left w3-black db-zindex-2 db-flex-column">
+        <div>
+            <!-- Avatar image in top left corner -->
+            <img class="w3-bar-item w3-button db-hover-black" src="./images/logo120.png"
+                style="width:100%; padding:10px;" onclick="db_scrollLeft('#home')">
+            <!--
                 <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom" onclick="db_scrollLeft('#home')">
                     <p>INICIO</p>
                 </button>
                 -->
 
-                <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom" onclick="db_scrollLeft('#about')">
-                    <p>SOBRE MI</p>
-                </button>
-                <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom" onclick="db_scrollLeft('#skills')">
-                    <p>HABILIDADES</p>
-                </button>
-                <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom" onclick="db_scrollLeft('#experience')">
-                    <p>EXPERIENCIA</p>
-                </button>
-                <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom" onclick="db_scrollLeft('#education')">
-                    <p>FORMACIÓN</p>
-                </button>
-                <!--
+            <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom"
+                onclick="db_scrollLeft('#about')">
+                <p>SOBRE MI</p>
+            </button>
+            <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom"
+                onclick="db_scrollLeft('#skills')">
+                <p>HABILIDADES</p>
+            </button>
+            <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom"
+                onclick="db_scrollLeft('#experience')">
+                <p>EXPERIENCIA</p>
+            </button>
+            <button class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom"
+                onclick="db_scrollLeft('#education')">
+                <p>FORMACIÓN</p>
+            </button>
+            <!--
                 <button href="#blog" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
                     <p>BLOG</p>
                 </button>
                 -->
-                <button class="w3-bar-item w3-button w3-padding db-hover-black" onclick="db_scrollLeft('#contact')">
-                    <p>CONTACTO</p>
-                </button>
+            <button class="w3-bar-item w3-button w3-padding db-hover-black" onclick="db_scrollLeft('#contact')">
+                <p>CONTACTO</p>
+            </button>
+        </div>
+        <div class="w3-large db-text-yellow">
+            <div class="w3-bar w3-center">
+                <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+                <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
             </div>
-            <div class="w3-large db-text-yellow">
-                <div class="w3-bar w3-center">
-                    <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
-                    <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
-                </div>              
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Sidebar on small screens (Hidden on medium and large screens) -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right" id="mySidebar" onclick="w3_close()">
-            <!--
+    <!-- Sidebar on small screens (Hidden on medium and large screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right" id="mySidebar" onclick="w3_close()">
+        <!--
             <a href="#" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
                 <p>INICIO</p>
             </a>
             -->
-            <a href="#about" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <p>SOBRE MI</p>
-            </a>
-            <a href="#skills" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <p>HABILIDADES</p>
-            </a>
-            <a href="#experience" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <p>EXPERIENCIA</p>
-            </a>
-            <a href="#education" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
-                <p>FORMACIÓN</p>
-            </a>
-            <!--
+        <a href="#about" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+            <p>SOBRE MI</p>
+        </a>
+        <a href="#skills" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+            <p>HABILIDADES</p>
+        </a>
+        <a href="#experience" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+            <p>EXPERIENCIA</p>
+        </a>
+        <a href="#education" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
+            <p>FORMACIÓN</p>
+        </a>
+        <!--
             <a href="#blog" class="w3-bar-item w3-button w3-padding db-hover-black db-border-bottom">
                 <p>BLOG</p>
             </a>
             -->
-            <a href="#contact" class="w3-bar-item w3-button w3-padding db-hover-black">
-                <p>CONTACTO</p>
-            </a>         
-        </nav>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding db-hover-black">
+            <p>CONTACTO</p>
+        </a>
+    </nav>
 
-        <!-- Overlay on small screens (Hidden on medium and large screens) -->
-        <div id="myOverlay" class="w3-overlay w3-hide-large w3-hide-medium" onclick="w3_close()" style="cursor:pointer"></div>
+    <!-- Overlay on small screens (Hidden on medium and large screens) -->
+    <div id="myOverlay" class="w3-overlay w3-hide-large w3-hide-medium" onclick="w3_close()" style="cursor:pointer">
+    </div>
 
-        <nav class="w3-top w3-black w3-hide-large w3-hide-medium db-zindex-2">
-            <div class="w3-bar w3-opacity-off w3-medium">
-                <div class="w3-row">
-                    <div class="w3-col s4">
-                        <a href="#"><span class="w3-bar-item db-black">DAVID RUBIO</span> </a>
-                    </div>
-                    <div class="w3-col s4 w3-center w3-large db-text-yellow">
-                        <button class="w3-button db-hover-black">
-                            <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
-                            <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
-                        </button>
-                    </div>
-                    <div class="w3-col s4 w3-right-align">
-                        <button id="openNav" class="w3-button db-hover-black" onclick="w3_open()">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
+    <nav class="w3-top w3-black w3-hide-large w3-hide-medium db-zindex-2">
+        <div class="w3-bar w3-opacity-off w3-medium">
+            <div class="w3-row">
+                <div class="w3-col s4">
+                    <a href="#"><span class="w3-bar-item db-black">DAVID RUBIO</span> </a>
+                </div>
+                <div class="w3-col s4 w3-center w3-large db-text-yellow">
+                    <button class="w3-button db-hover-black">
+                        <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267"
+                            target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin w3-hover-opacity"></i></a>
+                        <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
+                    </button>
+                </div>
+                <div class="w3-col s4 w3-right-align">
+                    <button id="openNav" class="w3-button db-hover-black" onclick="w3_open()">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Page Content -->
-        <div id="main">
-            <div class="main-wrapper">
-                <!-- Header/Home -->
-                <header class="w3-content w3-display-container db-content" id="home">
-                    <div class="w3-display-container db-content">
-                        <img class="mySlides" src="https://source.unsplash.com/850x1000/?nature" style="width:100%">
-                        <img class="mySlides" src="https://source.unsplash.com/850x1000?water" style="width:100%">
-                        <img class="mySlides" src="https://source.unsplash.com/850x1000?architecture" style="width:100%">
-                        <!--<img class="mySlides" src="https://source.unsplash.com/user/erondu/850x1000" style="width:100%">-->
-                    </div>
-                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                        <span class="w3-badge demo w3-border w3-transparent" ></span>
-                        <span class="w3-badge demo w3-border w3-transparent" ></span>
-                        <span class="w3-badge demo w3-border w3-transparent" ></span>
-                    </div>
-
-                    <div class="db-message-slider w3-display-bottomleft w3-text-white db-grey-04"> 
-                        <div class="w3-hide-large w3-hide-medium">
-                            <div>
-                                <h2 class="w3-xlarge">
-                                    <span class="db-font-weight-300">Hola, soy</span>
-                                    <br>
-                                    David Rubio
-                                </h2>
-                                <h5 class="w3-large db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>                            
-                            </div>
-                            <div class="w3-large db-text-yellow w3-center">
-                                <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
-                                <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
-                            </div> 
-                        </div>
-                        <div class="w3-hide-small">
-                            <div>
-                                <h2 class="w3-xxlarge">
-                                    <span class="db-font-weight-300">Hola, soy</span>
-                                    <br>
-                                    David Rubio
-                                </h2>
-                                <h5 class="w3-xlarge db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto Técnico</h5>
-                            </div>
-                            <div class="w3-xlarge db-text-yellow w3-center">
-                                <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
-                                <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <!-- About Section -->
-                <div class="w3-content w3-justify w3-padding-large w3-padding-48 db-content" id="about">
-
-                    <div class="w3-row">
-                        <div class="w3-col s12 m9">
-                            <h2 class="w3-text-dark w3-xxlarge">SOBRE MI</h2>
-                            <hr class="db-hr-title">
-                        </div>
-                        <div class="w3-col s12 m9">
-                            <h2 class="w3-text-dark w3-medium">PERFIL PROFESIONAL</h2>
-                            <p class="db-text-ordinario w3-medium">Full Stack Developer con varios años de experiencia en el desarrollo de software.</p>
-                            <p class="db-text-ordinario w3-medium">Apasionado de la tecnología y arquitectura. Me gusta trabajar en equipo, aportar ideas, 
-                                realizar el trabajo profesionalmente con persistencia y constancia. En constante aprendizaje de nuevas tecnologías.</p>
-                        </div>
-                        <div class="w3-col s12 m9">
-                            <ul class="w3-ul db-text-ordinario w3-medium">
-                                <li>Nombre: <span class="db-font-weight-600">David Rubio Benito</span></li>
-                                <li>Email: <a class="db-font-weight-600" href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a></li>
-                                <!--<li>Teléfono: <span class="db-font-weight-600">(+34) XXX XXX XXX</span></li>-->
-                                <li>Año Nacimiento: <span class="db-font-weight-600">1977</span></li>
-                                <li>Localidad: <span class="db-font-weight-600">Torrejón de Ardoz - Madrid </span></li>
-                                <li>Nacionalidad: <span class="db-font-weight-600">Española</span></li>
-                            </ul>
-                        </div>
-                        <div class="w3-col s12 m9">
-                            <a href="./images/cvmee.pdf" class="w3-btn w3-text-black w3-padding-large w3-section w3-medium db-border-yellow">
-                                <i class="fa fa-download"></i> 
-                                DESCARGAR CV FORMATO PDF
-                            </a>
-                        </div>
-                    </div>
-
-                <!-- End About Section -->
+    <!-- Page Content -->
+    <div id="main">
+        <div class="main-wrapper">
+            <!-- Header/Home -->
+            <header class="w3-content w3-display-container db-content" id="home">
+                <div class="w3-display-container db-content">
+                    <img class="mySlides" src="./images/slider-01-resize.jpg" style="width:100%"
+                        alt="David Rubio Benito - Foto de presentación">
+                    <img class="mySlides" src="./images/slider-02-resize.jpg" style="width:100%"
+                        alt="David Rubio Benito - Foto de presentación">
+                    <img class="mySlides" src="./images/slider-04-resize.jpg" style="width:100%"
+                        alt="David Rubio Benito - Foto de presentación">
+                </div>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <span class="w3-badge demo w3-border w3-transparent"></span>
+                    <span class="w3-badge demo w3-border w3-transparent"></span>
+                    <span class="w3-badge demo w3-border w3-transparent"></span>
                 </div>
 
-                <!-- Skills Section -->
-                <div class="w3-content w3-padding w3-padding-48 db-content w3-light-grey" id="skills">
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-xxlarge">MIS HABILIDADES</h2>
-                            <hr class="db-hr-title">
+                <div class="db-message-slider w3-display-bottomleft w3-text-white db-grey-04">
+                    <div class="w3-hide-large w3-hide-medium">
+                        <div>
+                            <h2 class="w3-xlarge">
+                                <span class="db-font-weight-300">Hola, soy</span>
+                                <br>
+                                David Rubio
+                            </h2>
+                            <h5 class="w3-large db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto
+                                Técnico</h5>
                         </div>
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-medium">RESUMEN HABILIDADES</h2>
-                            <p class="db-text-ordinario w3-medium w3-justify">Tras finalizar estudios he potenciado conocimientos técnicos y habilidades prácticas en Front-End y Back-End.</p>
-                            <p class="db-text-ordinario w3-medium w3-justify">He tenido la oportunidad de usar una gran variedad de lenguajes de programación, sistemas operativos y herramientas de desarrollo.</p>
+                        <div class="w3-large db-text-yellow w3-center">
+                            <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267"
+                                target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-linkedin w3-hover-opacity"></i></a>
+                            <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
+                        </div>
+                    </div>
+                    <div class="w3-hide-small">
+                        <div>
+                            <h2 class="w3-xxlarge">
+                                <span class="db-font-weight-300">Hola, soy</span>
+                                <br>
+                                David Rubio
+                            </h2>
+                            <h5 class="w3-xlarge db-font-weight-200 db-title-resumen">Desarrollador Web / Arquitecto
+                                Técnico</h5>
+                        </div>
+                        <div class="w3-xlarge db-text-yellow w3-center">
+                            <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267"
+                                target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-linkedin w3-hover-opacity"></i></a>
+                            <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <div class="w3-content w3-justify w3-padding-large w3-padding-48 db-content" id="about">
+
+                <div class="w3-row">
+                    <div class="w3-col s12 m9">
+                        <h2 class="w3-text-dark w3-xxlarge">SOBRE MI</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <h2 class="w3-text-dark w3-medium">PERFIL PROFESIONAL</h2>
+                        <p class="db-text-ordinario w3-medium">Profesional del desarrollo de software con sólida
+                            experiencia en el sector tecnológico.</p>
+                        <p class="db-text-ordinario w3-medium">Me apasiona la tecnología y la arquitectura, y destaco
+                            por mi capacidad para trabajar en equipo, aportar ideas innovadoras y ejecutar proyectos con
+                            profesionalismo, perseverancia y compromiso.</p>
+                        <p class="db-text-ordinario w3-medium">En los últimos años, me he especializado en el desarrollo
+                            backend, participando activamente en el diseño e implementación de soluciones robustas y
+                            escalables.
+                            Además, cuento con experiencia en frontend, lo que me permite tener una visión integral del
+                            ciclo completo de desarrollo de software.
+                        </p>
+                        <p class="db-text-ordinario w3-medium">Estoy comprometido con el aprendizaje continuo y la
+                            adopción de nuevas tecnologías.</p>
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <ul class="w3-ul db-text-ordinario w3-medium">
+                            <li>Nombre: <span class="db-font-weight-600">David Rubio Benito</span></li>
+                            <li>Email: <a class="db-font-weight-600"
+                                    href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a></li>
+                            <!--<li>Teléfono: <span class="db-font-weight-600">(+34) XXX XXX XXX</span></li>-->
+                            <li>Año Nacimiento: <span class="db-font-weight-600">1977</span></li>
+                            <li>Localidad: <span class="db-font-weight-600">Torrejón de Ardoz - Madrid </span></li>
+                            <li>Nacionalidad: <span class="db-font-weight-600">Española</span></li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s12 m9">
+                        <a href="./images/cvmee.pdf"
+                            class="w3-btn w3-text-black w3-padding-large w3-section w3-medium db-border-yellow">
+                            <i class="fa fa-download"></i>
+                            DESCARGAR CV FORMATO PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- End About Section -->
+            </div>
+
+            <!-- Skills Section -->
+            <div class="w3-content w3-padding w3-padding-48 db-content w3-light-grey" id="skills">
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">MIS HABILIDADES</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-medium">RESUMEN HABILIDADES</h2>
+                        <p class="db-text-ordinario w3-medium w3-justify">Tras finalizar mis estudios, he fortalecido
+                            mis conocimientos técnicos y habilidades prácticas tanto en Front-End como en Back-End.</p>
+                        <p class="db-text-ordinario w3-medium w3-justify">He trabajado con una amplia variedad de
+                            lenguajes de programación, sistemas operativos y herramientas de desarrollo..</p>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top db-row">
+                    <div class="w3-col m3">
+                        <div class="progress avanzado avanzado-80">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">80%</div>
                         </div>
                     </div>
 
-                    <div class="w3-row w3-margin-top db-row">
-                        <div class="w3-col m3">
-                            <div class="progress avanzado avanzado-80">
-                            <span class="progress-left">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <span class="progress-right">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <div class="progress-value">80%</div>
-                            </div>
+                    <div class="w3-col m3">
+                        <div class="skills-principal">
+                            <h4>Java</h4>
+                            <h4>Spring Boot</h4>
+                            <p>Avanzado</p>
                         </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="skills-principal">
-                                <h4>HTML/CSS3</h4>
-                                <p>Avanzado</p>
-                            </div>
-                        </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="progress avanzado avanzado-80">
-                            <span class="progress-left">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <span class="progress-right">
-                                <span class="progress-bar"></span>
-                            </span>
-                            <div class="progress-value">80%</div>
-                            </div>
-                        </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="skills-principal">
-                                <h4>Javascript</h4>
-                                <p>Avanzado</p>
-                            </div>
-                        </div>
-                    </div> 
+                    </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col m3">
-                            <div class="progress avanzado avanzado-80">
+                    <div class="w3-col m3">
+                        <div class="progress avanzado avanzado-80">
                             <span class="progress-left">
                                 <span class="progress-bar"></span>
                             </span>
@@ -261,19 +297,40 @@
                                 <span class="progress-bar"></span>
                             </span>
                             <div class="progress-value">80%</div>
-                            </div>
                         </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="skills-principal">
-                                <h4>Java</h4>
-                                <h4>Spring Boot</h4>
-                                <p>Avanzado</p>
-                            </div>
+                    </div>
+
+                    <div class="w3-col m3">
+                        <div class="skills-principal">
+                            <h4>HTML/CSS3</h4>
+                            <p>Avanzado</p>
                         </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="progress avanzado avanzado-60">
+                    </div>
+
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col m3">
+                        <div class="progress avanzado avanzado-80">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m3">
+                        <div class="skills-principal">
+                            <h4>Javascript</h4>
+                            <p>Avanzado</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-col m3">
+                        <div class="progress avanzado avanzado-60">
                             <span class="progress-left">
                                 <span class="progress-bar"></span>
                             </span>
@@ -281,366 +338,385 @@
                                 <span class="progress-bar"></span>
                             </span>
                             <div class="progress-value">60%</div>
-                            </div>
-                        </div>
-                    
-                        <div class="w3-col m3">
-                            <div class="skills-principal">
-                                <h4>Angular</h4>
-                                <h4>AngularJS</h4>
-                                <p>Medio</p>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
                         </div>
                     </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h3 class="w3-text-dark w3-medium">CONOCIMIENTOS</h3>
+                    <div class="w3-col m3">
+                        <div class="skills-principal">
+                            <h4>Angular</h4>
+                            <h4>AngularJS</h4>
+                            <p>Medio</p>
                         </div>
                     </div>
-                    <div class="w3-row w3-margin-top db-row">
-                        <div class="w3-col s12 m4">
-                            <ul class="w3-ul lista-skills">
-                                <li class="w3-border-0"><i class="fas fa-check"></i> TypeScript</li> 
-                                <li class="w3-border-0"><i class="fas fa-check"></i> jQuery</li>                                 
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Git / GitHub / GitLab</li>      
-                            </ul>
-                        </div>
-                        <div class="w3-col s12 m4">
-                            <ul class="w3-ul lista-skills">    
-                                <li class="w3-border-0"><i class="fas fa-check"></i> MySql / Oracle</li>     
-                                <li class="w3-border-0"><i class="fas fa-check"></i> PHP</li>                                                           
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Eclipse / IntelliJIDEA</li>                                                      
-                            </ul>
-                        </div>
-                        <div class="w3-col s12 m4">
-                            <ul class="w3-ul lista-skills">                                   
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Microsoft Office</li>  
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Photoshop</li>
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Illustrator</li>      
-                                <li class="w3-border-0"><i class="fas fa-check"></i> AutoCad 2014</li>
-                                <li class="w3-border-0"><i class="fas fa-check"></i> Presto 8.8</li>        
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="w3-row db-row">
-                        <div class="w3-col">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h3 class="w3-text-dark w3-medium">Lenguajes</h3>
-                        </div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
                     </div>
-                    <div class="w3-row w3-margin-top db-row">
-                        <div class="w3-col s4 m2">
-                            <div class="progress-value-lenguaje">99</div>
-                        </div>
-                        <div class="w3-col s8 m10">
-                            <div class="idioma">
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h3 class="w3-text-dark w3-medium">CONOCIMIENTOS</h3>
+                    </div>
+                </div>
+                <div class="w3-row w3-margin-top db-row">
+                    <div class="w3-col s12 m4">
+                        <ul class="w3-ul lista-skills">
+                            <li class="w3-border-0"><i class="fas fa-check"></i> MySql / Oracle / Redis</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Lombok / ModelMapper</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s12 m4">
+                        <ul class="w3-ul lista-skills">
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Swagger / Open Api</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Git / GitHub / GitLab</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Eclipse / IntelliJIDEA</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s12 m4">
+                        <ul class="w3-ul lista-skills">
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Microsoft Office</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Photoshop</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Illustrator</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> AutoCad 2014</li>
+                            <li class="w3-border-0"><i class="fas fa-check"></i> Presto 8.8</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h3 class="w3-text-dark w3-medium">Lenguajes</h3>
+                    </div>
+                </div>
+                <div class="w3-row w3-margin-top db-row">
+                    <div class="w3-col s4 m2">
+                        <div class="progress-value-lenguaje">99</div>
+                    </div>
+                    <div class="w3-col s8 m10">
+                        <div class="idioma">
                             <h4 class="w3-medium">Español Nativo</h4>
                             <div class="process-value-100">
                                 <div class="progress-value-barra" style="width:99%"></div>
-                            </div>       
                             </div>
                         </div>
                     </div>
-                    <div class="w3-row w3-margin-top db-row">
-                        <div class="w3-col s4 m2">
-                            <div class="progress-value-lenguaje">33</div>
-                        </div>
-                        <div class="w3-col s8 m10">
-                            <div class="idioma">
-                                <h4 class="w3-medium">Inglés A2</h4>
-                                <div class="process-value-100">
-                                    <div class="progress-value-barra" style="width:33%"></div>
-                                </div>       
+                </div>
+                <div class="w3-row w3-margin-top db-row">
+                    <div class="w3-col s4 m2">
+                        <div class="progress-value-lenguaje">33</div>
+                    </div>
+                    <div class="w3-col s8 m10">
+                        <div class="idioma">
+                            <h4 class="w3-medium">Inglés A2</h4>
+                            <div class="process-value-100">
+                                <div class="progress-value-barra" style="width:33%"></div>
                             </div>
                         </div>
                     </div>
+                </div>
 
                 <!-- End Skills Section -->
+            </div>
+
+            <!-- Experience Section -->
+            <div class="w3-content w3-padding w3-padding-48 db-content" id="experience">
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">EXPERIENCIA</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-medium">RESUMEN EXPERIENCIA</h2>
+                        <p class="db-text-ordinario w3-medium w3-justify">Profesional con amplia experiencia en el
+                            desarrollo de software, con sólidos conocimientos técnicos en Front-End y Back-End.</p>
+                    </div>
                 </div>
 
-                <!-- Experience Section -->
-                <div class="w3-content w3-padding w3-padding-48 db-content" id="experience">
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-xxlarge">EXPERIENCIA</h2>
-                            <hr class="db-hr-title">
-                        </div>
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-medium">RESUMEN EXPERIENCIA</h2>
-                            <p class="db-text-ordinario w3-medium w3-justify">Profesional con varios años de experiencia en el desarrollo de software 
-                                con conocimientos técnicos Frond-End y Back-End.</p>
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Babel Sistemas de la Información S.A.</h5>
+                            <h4 class="w3-xlarge">Desarrollador Software</h4>
+                            <span class="w3-medium">Ago. 2018 - Actualidad</span>
                         </div>
                     </div>
+                    <div class=" w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador en SICE
+                                S.A.</span><br><dfn>Desarrollando microservicios</dfn><br><dfn>Java, Spring Boot, JUnit,
+                                Mockito, Maven, GitLab, Oracle, IntelliJIDEA.</dfn></p>
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Iberia
+                                S.A.</span><br><dfn>Desarrollando microservicios página web
+                                iberia.com</dfn><br><dfn>Java, Spring MVC, JUnit, Mockito, Docker, Maven, Git, TomCat,
+                                Oracle, Eclipse.</dfn></p>
+                    </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Hasten Group S.A.</h5>
+                            <h4 class="w3-xlarge">Desarrollador de Sofware</h4>
+                            <span class="w3-medium">Feb. 2017 - Ago. 2018</span>
                         </div>
                     </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Banco
+                                Inversis S.A.</span><br>
+                            <dfn>Desarrollador aplicación web interna</dfn><br><dfn>HTML, CSS3, Bootstrap, Javascript,
+                                AngularJS, jQuery, Kendo UI, Adobe Flex,
+                                Java, Spring MVC, SpringBoot, CVS, SVN, Eclipse, TomCat, Oracle, OSB, TIBCO,
+                                Ibulder.</dfn>
+                        </p>
+                    </div>
+                </div>
 
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Babel Sistemas de la Información S.A.</h5>
-                                <h4 class="w3-xlarge">Desarrollador Sofware</h4>
-                                <span class="w3-medium">Ago. 2018 - Actualidad</span>       
-                            </div>
-                        </div>
-                        <div class=" w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador en SICE S.A.</span><br><dfn>Desarrollando microservicios</dfn><br><dfn>Java, Spring Boot, JUnit, Mockito, Maven, GitLab, Oracle, IntelliJIDEA.</dfn></p>
-                            <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Iberia S.A.</span><br><dfn>Desarrollando microservicios página web iberia.com</dfn><br><dfn>Java, Spring MVC, JUnit, Mockito, Docker, Maven, Git, TomCat, Oracle, Eclipse.</dfn></p>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Move4Talent S.L.</h5>
+                            <h4 class="w3-xlarge">Programador Junior</h4>
+                            <span class="w3-medium">Ene. 2015 - Febr. 2017</span>
                         </div>
                     </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador
+                                software</span><br><dfn>Páginas web con CMS Joomla, HTML, CSS,
+                                Javascript, jQuery, PHP.</dfn><br><dfn>Aplicación de gestión para bares y restaurantes
+                                (TPV, comandero) desarrollada con AngularJS.</dfn></p>
+                    </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Caytco Import S.L.</h5>
+                            <h4 class="w3-xlarge">Responsable de producto</h4>
+                            <span class="w3-medium">Jul. 2010 - Jul. 2011</span>
                         </div>
                     </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><dfn>Elaboración de instrucciones de fabricación, control de
+                                calidad, implementación de acciones correctivas, diseño gráfico y retoque
+                                fotográfico.</dfn></p>
+                    </div>
+                </div>
 
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Hasten Group S.A.</h5>
-                                <h4 class="w3-xlarge">Desarrollador Sofware</h4>
-                                <span class="w3-medium">Feb. 2017 - Ago. 2018</span>       
-                            </div>
-                        </div>
-                        <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><span class="db-font-weight-600">Desarrollador web en Banco Inversis S.A.</span><br>
-                                <dfn>Desarrollador aplicación web interna</dfn><br><dfn>HTML, CSS3, Bootstrap, Javascript, AngularJS, jQuery, Kendo UI, Adobe Flex, 
-                                    Java, Spring MVC, SpringBoot, CVS, SVN, Eclipse, TomCat, Oracle, OSB, TIBCO, Ibulder.</dfn></p>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Contratas y Obras Empresa Constructora S.A.</h5>
+                            <h4 class="w3-xlarge">Jefe de obra</h4>
+                            <span class="w3-medium">Feb. 2008 - Dic. 2009</span>
                         </div>
                     </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><dfn>Planificación de obra, realización de mediciones valoradas,
+                                certificaciones, solicitud y comparación de ofertas,
+                                propuestas de compras y subcontrataciones, seguimiento y control de especificaciones,
+                                plazos de entrega y documentación de calidad y seguridad.</dfn></p>
+                    </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m4 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Ortiz Construcciones y Proyectos S.A.</h5>
+                            <h4 class="w3-xlarge">Jefe de producción</h4>
+                            <span class="w3-medium">Nov. 2005 - Feb. 2008</span>
                         </div>
                     </div>
-
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Move4Talent S.L.</h5>
-                                <h4 class="w3-xlarge">Programador Junior</h4>
-                                <span class="w3-medium">Ene. 2015 - Febr. 2017</span>       
-                            </div>
-                        </div>
-                        <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><span class="db-font-weight-600">Desallorrador software</span><br><dfn>Páginas web con CMS Joomla, HTML, CSS, 
-                                Javascript, jQuery, PHP.</dfn><br><dfn>Aplicación gestioón bares y restaurantes (TPV, comandero) con framework AngularJS.</dfn></p>
-                        </div>
+                    <div class="w3-container w3-col s12 m6 funciones w3-justify">
+                        <p class="db-text-ordinario"><dfn>Dar apoyo al Jefe de Obra en todo lo relativo a la correcta
+                                realización de la obra.</dfn></p>
                     </div>
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-ruler-combined"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Caytco Import S.L.</h5>
-                                <h4 class="w3-xlarge">Responsable producto</h4>
-                                <span class="w3-medium">Jul. 2010 - Jul. 2011</span>       
-                            </div>
-                        </div>
-                        <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><dfn>Instrucciones para la fabricación del producto, control de calidad del producto, acciones correctoras, 
-                                diseño gráﬁco y retoque fotográﬁco.</dfn></p>
-                        </div>
-                    </div>
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-city"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Contratas y Obras Empresa Constructora S.A.</h5>
-                                <h4 class="w3-xlarge">Jefe de obra</h4>
-                                <span class="w3-medium">Feb. 2008 - Dic. 2009</span>       
-                            </div>
-                        </div>
-                        <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><dfn>Programación de la obra, mediciones valoradas, certiﬁcaciones, solicitud de ofertas, estudios comparativos, 
-                                propuestas de compras y subcontratos, seguimiento, control y evaluación de especiﬁcaciones, plazos de entrega, 
-                                control de documentación de calidad y seguridad.</dfn></p>
-                        </div>
-                    </div>
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fas fa-city"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m4 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Ortiz Construcciones y Proyectos S.A.</h5>
-                                <h4 class="w3-xlarge">Jefe de producción</h4>
-                                <span class="w3-medium">Nov. 2005 - Feb. 2008</span>       
-                            </div>
-                        </div>
-                        <div class="w3-container w3-col s12 m6 funciones w3-justify">
-                            <p class="db-text-ordinario"><dfn>Dar apoyo al Jefe de Obra en todo lo relativo a la correcta realización de la obra.</dfn></p>
-                        </div>
-                    </div>
+                </div>
 
                 <!-- End Experience Section -->
+            </div>
+
+            <!-- Education Section -->
+            <div class="w3-content w3-padding w3-padding-48 w3-light-grey db-content" id="education">
+
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">FORMACIÓN</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-medium">RESUMEN FORMACIÓN</h2>
+                        <p class="db-text-ordinario w3-medium w3-justify">Mi pasión por las nuevas tecnologías y la
+                            arquitectura me impulsó a formarme como Técnico en Desarrollo de Software y Diplomado en
+                            Arquitectura Técnica.</p>
+                    </div>
                 </div>
-                
-                <!-- Education Section -->
-                <div class="w3-content w3-padding w3-padding-48 w3-light-grey db-content" id="education">
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-xxlarge">FORMACIÓN</h2>
-                            <hr class="db-hr-title">
-                        </div>
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-medium">RESUMEN FORMACIÓN</h2>
-                            <p class="db-text-ordinario w3-medium w3-justify">Mi pasión por las nuevas tecnologías y arquitectura 
-                                hizo impulsar mi formación como Técnico Desarrollo de Software y Diplomado en Arquitectura Técnica.</p>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m10 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">I.E.S. Barajas</h5>
+                            <h4 class="w3-xlarge">Téc. Sup. Desarrollo Aplicaciones Multiplataforma</h4>
+                            <span class="w3-medium">Oct. 2012 - Jun. 2014</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m10 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">Universidad Politécnica de Madrid</h5>
+                            <h4 class="w3-xlarge">Arquitectura Técnica</h4>
+                            <span class="w3-medium">Oct. 1996 - Febrero. 2003</span>
                         </div>
                     </div>
+                </div>
 
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m10 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">I.E.S. Barajas</h5>
-                                <h4 class="w3-xlarge">Téc. Sup. Desarrollo Aplicaciones Multiplataforma</h4>
-                                <span class="w3-medium">Oct. 2012 - Jun. 2014</span>       
-                            </div>
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <div class="full-divider"></div>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-margin-top experience-details db-row">
+                    <div class="w3-container w3-col s12 m2 icon-block">
+                        <i class="fa fa-edit"></i>
+                    </div>
+                    <div class="w3-container w3-col s12 m10 periodo">
+                        <div class="experience-principal">
+                            <h5 class="w3-large">I.P. Santa María del Castillo</h5>
+                            <h4 class="w3-xlarge">Tec. Sup. Delineación Edificios y Obras</h4>
+                            <span class="w3-medium">Oct. 1991 - Jun. 1996</span>
                         </div>
                     </div>
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
-
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fa fa-home"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m10 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">Universidad Politécnica de Madrid</h5>
-                                <h4 class="w3-xlarge">Arquitectura Técnica</h4>
-                                <span class="w3-medium">Oct. 1996 - Febrero. 2003</span>       
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <div class="full-divider"></div>
-                        </div>
-                    </div>
-        
-                    <div class="w3-row w3-margin-top experience-details db-row">
-                        <div class="w3-container w3-col s12 m2 icon-block">
-                            <i class="fa fa-edit"></i>
-                        </div>
-                        <div class="w3-container w3-col s12 m10 periodo">
-                            <div class="experience-principal">
-                                <h5 class="w3-large">I.P. Santa María del Castillo</h5>
-                                <h4 class="w3-xlarge">Tec. Sup. Delineación Edificios y Obras</h4>
-                                <span class="w3-medium">Oct. 1991 - Jun. 1996</span>       
-                            </div>
-                        </div>
-                    </div> 
+                </div>
                 <!-- End Education Section -->
-                </div>
+            </div>
 
-                <!-- Contact Section -->
-                <div class="w3-content w3-padding w3-padding-48 db-content" id="contact">
+            <!-- Contact Section -->
+            <div class="w3-content w3-padding w3-padding-48 db-content" id="contact">
 
-                    <div class="w3-row db-row">
-                        <div class="w3-col s12">
-                            <h2 class="w3-text-dark w3-xxlarge">CONTACTO</h2>
-                            <hr class="db-hr-title">
-                        </div>
-                        <div class="w3-col s12 m6">
-                            <p class="db-text-ordinario">
-                                <i class="fa fa-map-marker fa-fw db-text-yellow w3-xlarge w3-margin-right"></i>
-                                <span class="db-font-weight-600">Torrejón de Ardoz - Madrid, España</span></p>
-                            <!--<p class="db-text-ordinario">
+                <div class="w3-row db-row">
+                    <div class="w3-col s12">
+                        <h2 class="w3-text-dark w3-xxlarge">CONTACTO</h2>
+                        <hr class="db-hr-title">
+                    </div>
+                    <div class="w3-col s12 m6">
+                        <p class="db-text-ordinario">
+                            <i class="fa fa-map-marker fa-fw db-text-yellow w3-xlarge w3-margin-right"></i>
+                            <span class="db-font-weight-600">Torrejón de Ardoz - Madrid, España</span>
+                        </p>
+                        <!--<p class="db-text-ordinario">
                                 <i class="fa fa-phone fa-fw db-text-yellow w3-xlarge w3-margin-right"></i>
                                 <span class="db-font-weight-600">(+34) 636 061 885</span></p>-->
-                            <p class="db-text-ordinario">
-                                <i class="fa fa-envelope fa-fw db-text-yellow w3-xlarge w3-margin-right"></i>
-                                <a class="db-font-weight-600" href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a>
-                            </p>                           
-                        </div> 
-                        <div class="w3-col s12 m6">
-                            <h4 class="w3-text-dark">REDES SOCIALES</h4>
-                            <p class="db-text-ordinario db-text-yellow">
-                                <a class="w3-margin-right db-font-weight-600" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank">
-                                    <i class="fab fa-linkedin w3-xlarge w3-hover-opacity"></i></a>
-                                <!--<a class="w3-margin-right db-font-weight-600" href="https://api.whatsapp.com/send?phone=xxxxxxxxx">
-                                    <i class="fab fa-whatsapp w3-xlarge w3-hover-opacity"></i></a>-->
-                            </p>
-                        </div>
-                        <div class="w3-col s12">
-                            <div id="mapid" class="w3-image" style="width:100%;margin-top:48px;height: 80vh;"></div>
-                        </div>
+                        <p class="db-text-ordinario">
+                            <i class="fa fa-envelope fa-fw db-text-yellow w3-xlarge w3-margin-right"></i>
+                            <a class="db-font-weight-600"
+                                href="mailto:davidrubiobenito@gmail.com">davidrubiobenito@gmail.com</a>
+                        </p>
                     </div>
-                        
-                <!-- End Contact Section -->
+                    <div class="w3-col s12 m6">
+                        <h4 class="w3-text-dark">REDES SOCIALES</h4>
+                        <p class="db-text-ordinario db-text-yellow">
+                            <a class="w3-margin-right db-font-weight-600"
+                                href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin w3-xlarge w3-hover-opacity"></i></a>
+                            <!--<a class="w3-margin-right db-font-weight-600" href="https://api.whatsapp.com/send?phone=xxxxxxxxx">
+                                    <i class="fab fa-whatsapp w3-xlarge w3-hover-opacity"></i></a>-->
+                        </p>
+                    </div>
+                    <div class="w3-col s12">
+                        <div id="mapid" class="w3-image" style="width:100%;margin-top:48px;height: 80vh;"></div>
+                    </div>
                 </div>
 
-                <!-- Blog Section -->
-                <!--
+                <!-- End Contact Section -->
+            </div>
+
+            <!-- Blog Section -->
+            <!--
                 <div class="w3-content w3-padding w3-padding-48 w3-light-grey db-content" id="blog">
 
                     <div class="w3-row db-row">
@@ -652,7 +728,7 @@
                 </div>
                 -->
 
-                <!--
+            <!--
                 <div class="w3-content w3-padding-48 db-content " id="blog">
                     <h2 class="w3-text-light-grey">My Photos</h2>
                     <hr style="width:200px" class="w3-opacity">
@@ -673,41 +749,49 @@
                     </div>            
                 </div>
                 -->
-                
-                <!-- Footer -->
-                <footer class="w3-content db-black w3-padding-64 w3-text-grey w3-large w3-center w3-hide-large w3-hide-medium db-content">
-                    <a href="#home" class="w3-btn db-hover-black db-text-yellow db-border-yellow"><i class="fa fa-arrow-up w3-margin-right"></i>Arriba</a>
-                    <div class="w3-section w3-xlarge">
-                        <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a> 
-                        <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
-                    </div>
-                    <p class="db-text-ordinario">www.davidrubiobenito.github.io</p>
-                <!-- End footer -->
-                </footer>
 
-                <!-- Footer -->
-                <footer class="w3-content w3-display-container db-black w3-hide-small db-footer">
-                    <img class="db-img" src="https://source.unsplash.com/1700x1000/?nature" style="width:100%">
+            <!-- Footer -->
+            <footer
+                class="w3-content db-black w3-padding-64 w3-text-grey w3-large w3-center w3-hide-large w3-hide-medium db-content">
+                <a href="#home" class="w3-btn db-hover-black db-text-yellow db-border-yellow"><i
+                        class="fa fa-arrow-up w3-margin-right"></i>Arriba</a>
+                <div class="w3-section w3-xlarge">
+                    <a class="db-margin-lr-5" href="https://es.linkedin.com/in/david-rubio-benito-39a96267"
+                        target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+                    <!--<a class="db-margin-lr-5" href="https://api.whatsapp.com/send?phone=xxxxxxxxx"><i class="fab fa-whatsapp w3-hover-opacity"></i></a>-->
+                </div>
+                <p class="db-text-ordinario">www.davidrubiobenito.github.io</p>
                 <!-- End footer -->
-                </footer>
+            </footer>
 
-            </div>
+            <!-- Footer -->
+            <footer class="w3-content w3-display-container db-black w3-hide-small db-footer">
+                <img class="db-img" src="./images/slider-05-resize.jpg" style="width:100%"
+                    alt="David Rubio Benito - Foto de presentación">
+                <!-- End footer -->
+            </footer>
+
+        </div>
 
         <!-- END PAGE CONTENT -->
-        </div>
-        
-        <div id="popupCook">
-            <div id="closePopupCook" class="w3-right"><i class="far fa-window-close"></i></div>
-            <div class="w3-col s12 w3-center">
-                Este sitio web utliza cookies.<a href="./privacy-terms-and-conditions.html" target="_blank"> Más información.</a>
-            </div>
-            <div class="w3-col s12 w3-center"><a class="popupCookOK">Aceptar</a></div>           
-        </div>
+    </div>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" 
-                integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <div id="popupCook">
+        <div id="closePopupCook" class="w3-right"><i class="far fa-window-close"></i></div>
+        <div class="w3-col s12 w3-center">
+            Este sitio web utiliza cookies.<a href="./privacy-terms-and-conditions.html" target="_blank"> Más
+                información.</a>
+        </div>
+        <div class="w3-col s12 w3-center"><a class="popupCookOK">Aceptar</a></div>
+    </div>
 
-        <script type="text/javascript" src="./js/db-app.js"></script> 
-    </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+
+    <script type="text/javascript" src="./js/db-app.js"></script>
+</body>
+
 </html>
